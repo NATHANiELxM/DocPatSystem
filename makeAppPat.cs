@@ -35,5 +35,31 @@ namespace DocPatSystem
         {
 
         }
+
+        //Textboxes
+        private void famDocTB_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void otherTB_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        //Time dropdown for choice of hourly times
+        private void timeDropDown_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+        //Calender for day/month/year picking
+        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
+        {
+
+        }
+
+        private void reasonTB_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

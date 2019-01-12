@@ -50,5 +50,11 @@ namespace DocPatSystem
         {
 
         }
+
+        //This is the table
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

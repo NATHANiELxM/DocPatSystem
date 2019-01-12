@@ -53,6 +53,14 @@ namespace DocPatSystem
             this.Show();
         }
 
+        private void usernameTB1_TextChanged(object sender, EventArgs e)
+        {
 
+        }
+
+        private void passwordTB2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

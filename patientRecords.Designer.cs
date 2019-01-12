@@ -31,7 +31,7 @@
             this.searchResultsLabel = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.searchTB = new System.Windows.Forms.TextBox();
             this.viewButt = new System.Windows.Forms.Button();
             this.recordAccessButt = new System.Windows.Forms.Button();
             this.addNewPatientButt = new System.Windows.Forms.Button();
@@ -68,13 +68,14 @@
             this.label1.Text = "Search:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox1
+            // searchTB
             // 
-            this.textBox1.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(471, 20);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(312, 27);
-            this.textBox1.TabIndex = 3;
+            this.searchTB.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchTB.Location = new System.Drawing.Point(471, 20);
+            this.searchTB.Name = "searchTB";
+            this.searchTB.Size = new System.Drawing.Size(312, 27);
+            this.searchTB.TabIndex = 3;
+            this.searchTB.TextChanged += new System.EventHandler(this.searchTB_TextChanged);
             // 
             // viewButt
             // 
@@ -137,7 +138,7 @@
             this.Controls.Add(this.addNewPatientButt);
             this.Controls.Add(this.recordAccessButt);
             this.Controls.Add(this.viewButt);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.searchTB);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.searchResultsLabel);
@@ -154,7 +155,7 @@
         private System.Windows.Forms.Label searchResultsLabel;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox searchTB;
         private System.Windows.Forms.Button viewButt;
         private System.Windows.Forms.Button recordAccessButt;
         private System.Windows.Forms.Button addNewPatientButt;

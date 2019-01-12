@@ -28,5 +28,11 @@ namespace DocPatSystem
         {
 
         }
+
+        //current medications, with no remaining refills
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

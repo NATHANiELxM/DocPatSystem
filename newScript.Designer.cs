@@ -100,6 +100,7 @@
             this.instructions.Size = new System.Drawing.Size(206, 66);
             this.instructions.TabIndex = 25;
             this.instructions.Text = "";
+            this.instructions.TextChanged += new System.EventHandler(this.instructions_TextChanged);
             // 
             // add2ScriptButt
             // 
@@ -124,6 +125,7 @@
             this.refillAmount.Name = "refillAmount";
             this.refillAmount.Size = new System.Drawing.Size(57, 27);
             this.refillAmount.TabIndex = 23;
+            this.refillAmount.ValueChanged += new System.EventHandler(this.refillAmount_ValueChanged);
             // 
             // label5
             // 
@@ -155,6 +157,7 @@
             this.prescriptionName.Size = new System.Drawing.Size(206, 26);
             this.prescriptionName.TabIndex = 20;
             this.prescriptionName.Text = "";
+            this.prescriptionName.TextChanged += new System.EventHandler(this.prescriptionName_TextChanged);
             // 
             // pharmacyID
             // 
@@ -164,6 +167,7 @@
             this.pharmacyID.Size = new System.Drawing.Size(206, 26);
             this.pharmacyID.TabIndex = 19;
             this.pharmacyID.Text = "";
+            this.pharmacyID.TextChanged += new System.EventHandler(this.pharmacyID_TextChanged);
             // 
             // label3
             // 
@@ -185,6 +189,7 @@
             this.patientID.Size = new System.Drawing.Size(206, 26);
             this.patientID.TabIndex = 17;
             this.patientID.Text = "";
+            this.patientID.TextChanged += new System.EventHandler(this.patientID_TextChanged);
             // 
             // label2
             // 
@@ -217,6 +222,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(388, 267);
             this.dataGridView1.TabIndex = 16;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label6
             // 

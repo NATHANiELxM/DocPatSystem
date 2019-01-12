@@ -47,6 +47,14 @@ namespace DocPatSystem
 
         }
 
-        
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void urgentCB_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -66,6 +66,37 @@ namespace DocPatSystem
         {
         }
 
-        
+
+        //Textboxes
+        private void patientID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pharmacyID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void prescriptionName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void instructions_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void refillAmount_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        //current prescriptions table for current patient
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.refillReqPanel = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.acceptButt = new System.Windows.Forms.Button();
             this.denyButt = new System.Windows.Forms.Button();
+            this.acceptButt = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
             this.refillReqPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -49,23 +49,18 @@
             this.refillReqPanel.Size = new System.Drawing.Size(750, 400);
             this.refillReqPanel.TabIndex = 0;
             // 
-            // label1
+            // denyButt
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(179, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Patient Refill Requests";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(23, 32);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(704, 296);
-            this.dataGridView1.TabIndex = 1;
+            this.denyButt.BackColor = System.Drawing.Color.IndianRed;
+            this.denyButt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.denyButt.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.denyButt.Location = new System.Drawing.Point(427, 345);
+            this.denyButt.Name = "denyButt";
+            this.denyButt.Size = new System.Drawing.Size(95, 35);
+            this.denyButt.TabIndex = 3;
+            this.denyButt.Text = "Deny";
+            this.denyButt.UseVisualStyleBackColor = false;
+            this.denyButt.Click += new System.EventHandler(this.denyButt_Click);
             // 
             // acceptButt
             // 
@@ -80,18 +75,24 @@
             this.acceptButt.UseVisualStyleBackColor = false;
             this.acceptButt.Click += new System.EventHandler(this.acceptButt_Click);
             // 
-            // denyButt
+            // dataGridView1
             // 
-            this.denyButt.BackColor = System.Drawing.Color.IndianRed;
-            this.denyButt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.denyButt.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.denyButt.Location = new System.Drawing.Point(427, 345);
-            this.denyButt.Name = "denyButt";
-            this.denyButt.Size = new System.Drawing.Size(95, 35);
-            this.denyButt.TabIndex = 3;
-            this.denyButt.Text = "Deny";
-            this.denyButt.UseVisualStyleBackColor = false;
-            this.denyButt.Click += new System.EventHandler(this.denyButt_Click);
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(23, 32);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(704, 296);
+            this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(3, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(179, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Patient Refill Requests";
             // 
             // refillReq
             // 
