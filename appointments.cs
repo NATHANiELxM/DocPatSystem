@@ -57,6 +57,16 @@ namespace DocPatSystem
             //This will make a new auto-approved appointment.
         }
 
+
         
+        private void currentAppsTable_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void awaitingAppsTable_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -99,6 +99,7 @@
             this.currentAppsTable.Name = "currentAppsTable";
             this.currentAppsTable.Size = new System.Drawing.Size(444, 290);
             this.currentAppsTable.TabIndex = 4;
+            this.currentAppsTable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.currentAppsTable_CellContentClick);
             // 
             // LastName
             // 
@@ -169,6 +170,7 @@
             this.awaitingAppsTable.Name = "awaitingAppsTable";
             this.awaitingAppsTable.Size = new System.Drawing.Size(444, 290);
             this.awaitingAppsTable.TabIndex = 6;
+            this.awaitingAppsTable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.awaitingAppsTable_CellContentClick);
             // 
             // dataGridViewTextBoxColumn1
             // 

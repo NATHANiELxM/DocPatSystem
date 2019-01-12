@@ -30,5 +30,56 @@ namespace DocPatSystem
         {
 
         }
+
+        //Textboxes
+        private void dobTB_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ssnTB_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void heightTB_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void weightTB_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void genderTB_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void phoneTB_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void famDocTB_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void allergiesTB_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void proceduresTB_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        // RX History table
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

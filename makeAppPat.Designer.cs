@@ -76,6 +76,7 @@
             this.otherTB.ReadOnly = true;
             this.otherTB.Size = new System.Drawing.Size(166, 27);
             this.otherTB.TabIndex = 3;
+            this.otherTB.TextChanged += new System.EventHandler(this.otherTB_TextChanged);
             // 
             // famDocTB
             // 
@@ -87,12 +88,14 @@
             this.famDocTB.Size = new System.Drawing.Size(166, 27);
             this.famDocTB.TabIndex = 4;
             this.famDocTB.Text = "(Family Doctor)";
+            this.famDocTB.TextChanged += new System.EventHandler(this.famDocTB_TextChanged);
             // 
             // monthCalendar1
             // 
             this.monthCalendar1.Location = new System.Drawing.Point(75, 217);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 5;
+            this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
             // 
             // timeDropDown
             // 
@@ -102,6 +105,7 @@
             this.timeDropDown.Name = "timeDropDown";
             this.timeDropDown.Size = new System.Drawing.Size(173, 28);
             this.timeDropDown.TabIndex = 6;
+            this.timeDropDown.SelectedIndexChanged += new System.EventHandler(this.timeDropDown_SelectedIndexChanged);
             // 
             // reasonTB
             // 
@@ -110,6 +114,7 @@
             this.reasonTB.Size = new System.Drawing.Size(398, 165);
             this.reasonTB.TabIndex = 7;
             this.reasonTB.Text = "";
+            this.reasonTB.TextChanged += new System.EventHandler(this.reasonTB_TextChanged);
             // 
             // label1
             // 

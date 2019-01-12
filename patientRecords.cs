@@ -60,5 +60,11 @@ namespace DocPatSystem
         private void label1_Click(object sender, EventArgs e)
         {
         }
+
+        //search Textbox
+        private void searchTB_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

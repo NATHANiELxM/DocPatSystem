@@ -80,6 +80,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(433, 277);
             this.dataGridView1.TabIndex = 2;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label2
             // 
@@ -109,6 +110,7 @@
             this.allergiesTB.Size = new System.Drawing.Size(358, 74);
             this.allergiesTB.TabIndex = 5;
             this.allergiesTB.Text = "";
+            this.allergiesTB.TextChanged += new System.EventHandler(this.allergiesTB_TextChanged);
             // 
             // proceduresTB
             // 
@@ -118,6 +120,7 @@
             this.proceduresTB.Size = new System.Drawing.Size(358, 74);
             this.proceduresTB.TabIndex = 6;
             this.proceduresTB.Text = "";
+            this.proceduresTB.TextChanged += new System.EventHandler(this.proceduresTB_TextChanged);
             // 
             // label4
             // 
@@ -197,6 +200,7 @@
             this.dobTB.ReadOnly = true;
             this.dobTB.Size = new System.Drawing.Size(167, 27);
             this.dobTB.TabIndex = 14;
+            this.dobTB.TextChanged += new System.EventHandler(this.dobTB_TextChanged);
             // 
             // ssnTB
             // 
@@ -206,6 +210,7 @@
             this.ssnTB.ReadOnly = true;
             this.ssnTB.Size = new System.Drawing.Size(167, 27);
             this.ssnTB.TabIndex = 15;
+            this.ssnTB.TextChanged += new System.EventHandler(this.ssnTB_TextChanged);
             // 
             // heightTB
             // 
@@ -215,6 +220,7 @@
             this.heightTB.ReadOnly = true;
             this.heightTB.Size = new System.Drawing.Size(167, 27);
             this.heightTB.TabIndex = 16;
+            this.heightTB.TextChanged += new System.EventHandler(this.heightTB_TextChanged);
             // 
             // weightTB
             // 
@@ -224,6 +230,7 @@
             this.weightTB.ReadOnly = true;
             this.weightTB.Size = new System.Drawing.Size(167, 27);
             this.weightTB.TabIndex = 17;
+            this.weightTB.TextChanged += new System.EventHandler(this.weightTB_TextChanged);
             // 
             // genderTB
             // 
@@ -233,6 +240,7 @@
             this.genderTB.ReadOnly = true;
             this.genderTB.Size = new System.Drawing.Size(167, 27);
             this.genderTB.TabIndex = 18;
+            this.genderTB.TextChanged += new System.EventHandler(this.genderTB_TextChanged);
             // 
             // phoneTB
             // 
@@ -242,6 +250,7 @@
             this.phoneTB.ReadOnly = true;
             this.phoneTB.Size = new System.Drawing.Size(167, 27);
             this.phoneTB.TabIndex = 19;
+            this.phoneTB.TextChanged += new System.EventHandler(this.phoneTB_TextChanged);
             // 
             // famDocTB
             // 
@@ -251,6 +260,7 @@
             this.famDocTB.ReadOnly = true;
             this.famDocTB.Size = new System.Drawing.Size(167, 27);
             this.famDocTB.TabIndex = 20;
+            this.famDocTB.TextChanged += new System.EventHandler(this.famDocTB_TextChanged);
             // 
             // accessButt
             // 

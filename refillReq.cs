@@ -35,5 +35,11 @@ namespace DocPatSystem
         {
             //This button denies the refill. status is set to denied, the patient is notified. 
         }
+
+        // table of patients requesting refills on specific medication
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
