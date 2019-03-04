@@ -1,0 +1,57 @@
+C:\Users\Nathaniel\source\repos\DocPatSystem\DocPatSystem\bin\Debug\DocPatSystem.exe.config
+C:\Users\Nathaniel\source\repos\DocPatSystem\DocPatSystem\bin\Debug\DocPatSystem.exe
+C:\Users\Nathaniel\source\repos\DocPatSystem\DocPatSystem\bin\Debug\DocPatSystem.pdb
+C:\Users\Nathaniel\source\repos\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.csprojAssemblyReference.cache
+C:\Users\Nathaniel\source\repos\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.Properties.Resources.resources
+C:\Users\Nathaniel\source\repos\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.csproj.GenerateResource.cache
+C:\Users\Nathaniel\source\repos\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.csproj.CoreCompileInputs.cache
+C:\Users\Nathaniel\source\repos\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.exe
+C:\Users\Nathaniel\source\repos\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.pdb
+C:\Users\Nathaniel\source\repos\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.login.resources
+C:\Users\Nathaniel\source\repos\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.docHome.resources
+C:\Users\Nathaniel\source\repos\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.Appointments.resources
+C:\Users\Nathaniel\source\repos\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.callReq.resources
+C:\Users\Nathaniel\source\repos\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.newScript.resources
+C:\Users\Nathaniel\source\repos\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.patientRecords.resources
+C:\Users\Nathaniel\source\repos\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.refillReq.resources
+C:\Users\Nathaniel\source\repos\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.patHome.resources
+C:\Users\Nathaniel\source\repos\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.makeAppPat.resources
+C:\Users\Nathaniel\source\repos\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.makeCall.resources
+C:\Users\Nathaniel\source\repos\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.myRecords.resources
+C:\Users\Nathaniel\source\repos\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.refillMeds.resources
+C:\Users\Nathaniel\Desktop\Team Project\DocPatSystem\DocPatSystem\bin\Debug\DocPatSystem.exe.config
+C:\Users\Nathaniel\Desktop\Team Project\DocPatSystem\DocPatSystem\bin\Debug\DocPatSystem.exe
+C:\Users\Nathaniel\Desktop\Team Project\DocPatSystem\DocPatSystem\bin\Debug\DocPatSystem.pdb
+C:\Users\Nathaniel\Desktop\Team Project\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.csprojAssemblyReference.cache
+C:\Users\Nathaniel\Desktop\Team Project\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.callReq.resources
+C:\Users\Nathaniel\Desktop\Team Project\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.docHome.resources
+C:\Users\Nathaniel\Desktop\Team Project\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.login.resources
+C:\Users\Nathaniel\Desktop\Team Project\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.makeAppPat.resources
+C:\Users\Nathaniel\Desktop\Team Project\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.makeCall.resources
+C:\Users\Nathaniel\Desktop\Team Project\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.myRecords.resources
+C:\Users\Nathaniel\Desktop\Team Project\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.newScript.resources
+C:\Users\Nathaniel\Desktop\Team Project\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.patHome.resources
+C:\Users\Nathaniel\Desktop\Team Project\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.patientRecords.resources
+C:\Users\Nathaniel\Desktop\Team Project\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.Properties.Resources.resources
+C:\Users\Nathaniel\Desktop\Team Project\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.appointments.resources
+C:\Users\Nathaniel\Desktop\Team Project\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.refillMeds.resources
+C:\Users\Nathaniel\Desktop\Team Project\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.refillReq.resources
+C:\Users\Nathaniel\Desktop\Team Project\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.csproj.GenerateResource.cache
+C:\Users\Nathaniel\Desktop\Team Project\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.csproj.CoreCompileInputs.cache
+C:\Users\Nathaniel\Desktop\Team Project\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.exe
+C:\Users\Nathaniel\Desktop\Team Project\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.pdb
+C:\Users\Nathaniel\Desktop\Team Project\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.pharmHome.resources
+C:\Users\Nathaniel\Desktop\Team Project\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.Pharm.activeCases.resources
+C:\Users\Nathaniel\Desktop\Team Project\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.Pharm.activePrescriptions.resources
+C:\Users\Nathaniel\Desktop\Team Project\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.Pharm.allRecords.resources
+C:\Users\Nathaniel\Desktop\Team Project\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.Pharm.incomingScrips.resources
+C:\Users\Nathaniel\Desktop\Team Project\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.Pharm.refillReqs.resources
+C:\Users\Nathaniel\Desktop\Team Project\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.Pharm.makeCasePharm.resources
+C:\Users\Nathaniel\Desktop\Team Project\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.Doc.makeCaseDoc.resources
+C:\Users\Nathaniel\Desktop\Team Project\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.Pharm.viewCasePharm.resources
+C:\Users\Nathaniel\Desktop\Team Project\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.Doc.viewCaseDoc.resources
+C:\Users\Nathaniel\Desktop\Team Project\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.Pharm.viewRecord.resources
+C:\Users\Nathaniel\Desktop\Team Project\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.Doc.addNewRecord.resources
+C:\Users\Nathaniel\Desktop\Team Project\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.Pat.grantAccess.resources
+C:\Users\Nathaniel\Desktop\Team Project\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.Doc.viewRecord.resources
+C:\Users\Nathaniel\Desktop\Team Project\DocPatSystem\DocPatSystem\obj\Debug\DocPatSystem.Doc.drGrantAccess.resources

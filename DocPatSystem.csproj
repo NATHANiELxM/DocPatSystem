@@ -45,17 +45,47 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="callReq.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="callReq.Designer.cs">
-      <DependentUpon>callReq.cs</DependentUpon>
-    </Compile>
-    <Compile Include="docHome.cs">
+    <Compile Include="Doc\addNewRecord.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="docHome.Designer.cs">
+    <Compile Include="Doc\addNewRecord.Designer.cs">
+      <DependentUpon>addNewRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doc\allCases.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Doc\allCases.Designer.cs">
+      <DependentUpon>allCases.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doc\docHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doc\docHome.Designer.cs">
       <DependentUpon>docHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doc\drGrantAccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doc\drGrantAccess.Designer.cs">
+      <DependentUpon>drGrantAccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doc\makeCaseDoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Doc\makeCaseDoc.Designer.cs">
+      <DependentUpon>makeCaseDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doc\viewCaseDoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Doc\viewCaseDoc.Designer.cs">
+      <DependentUpon>viewCaseDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doc\viewRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doc\viewRecord.Designer.cs">
+      <DependentUpon>viewRecord.cs</DependentUpon>
     </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
@@ -63,88 +93,193 @@
     <Compile Include="login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
     </Compile>
-    <Compile Include="makeAppPat.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="makeAppPat.Designer.cs">
-      <DependentUpon>makeAppPat.cs</DependentUpon>
-    </Compile>
-    <Compile Include="makeCall.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="makeCall.Designer.cs">
-      <DependentUpon>makeCall.cs</DependentUpon>
-    </Compile>
-    <Compile Include="myRecords.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="myRecords.Designer.cs">
-      <DependentUpon>myRecords.cs</DependentUpon>
-    </Compile>
-    <Compile Include="patHome.cs">
+    <Compile Include="Pat\grantAccess.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="patHome.Designer.cs">
-      <DependentUpon>patHome.cs</DependentUpon>
+    <Compile Include="Pat\grantAccess.Designer.cs">
+      <DependentUpon>grantAccess.cs</DependentUpon>
     </Compile>
-    <Compile Include="patientRecords.cs">
+    <Compile Include="Pat\makeAppPat.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="patientRecords.Designer.cs">
+    <Compile Include="Pat\makeAppPat.Designer.cs">
+      <DependentUpon>makeAppPat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pat\makeCall.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pat\makeCall.Designer.cs">
+      <DependentUpon>makeCall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pat\myRecords.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pat\myRecords.Designer.cs">
+      <DependentUpon>myRecords.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pat\patHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pat\patHome.Designer.cs">
+      <DependentUpon>patHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doc\patientRecords.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Doc\patientRecords.Designer.cs">
       <DependentUpon>patientRecords.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharm\activeCases.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharm\activeCases.Designer.cs">
+      <DependentUpon>activeCases.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharm\activePrescriptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharm\activePrescriptions.Designer.cs">
+      <DependentUpon>activePrescriptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharm\allRecords.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharm\allRecords.Designer.cs">
+      <DependentUpon>allRecords.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharm\incomingScrips.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharm\incomingScrips.Designer.cs">
+      <DependentUpon>incomingScrips.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharm\makeCasePharm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharm\makeCasePharm.Designer.cs">
+      <DependentUpon>makeCasePharm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharm\pharmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharm\pharmHome.Designer.cs">
+      <DependentUpon>pharmHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharm\refillReqs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharm\refillReqs.Designer.cs">
+      <DependentUpon>refillReqs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharm\viewCasePharm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharm\viewCasePharm.Designer.cs">
+      <DependentUpon>viewCasePharm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharm\viewRecord.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharm\viewRecord.Designer.cs">
+      <DependentUpon>viewRecord.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="appointments.cs">
+    <Compile Include="Doc\appointments.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="appointments.Designer.cs">
+    <Compile Include="Doc\appointments.Designer.cs">
       <DependentUpon>appointments.cs</DependentUpon>
     </Compile>
-    <Compile Include="newScript.cs">
+    <Compile Include="Doc\newScript.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="newScript.Designer.cs">
+    <Compile Include="Doc\newScript.Designer.cs">
       <DependentUpon>newScript.cs</DependentUpon>
     </Compile>
-    <Compile Include="refillMeds.cs">
+    <Compile Include="Pat\refillMeds.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="refillMeds.Designer.cs">
+    <Compile Include="Pat\refillMeds.Designer.cs">
       <DependentUpon>refillMeds.cs</DependentUpon>
     </Compile>
-    <Compile Include="refillReq.cs">
+    <Compile Include="Doc\refillReq.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="refillReq.Designer.cs">
+    <Compile Include="Doc\refillReq.Designer.cs">
       <DependentUpon>refillReq.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="callReq.resx">
-      <DependentUpon>callReq.cs</DependentUpon>
+    <EmbeddedResource Include="Doc\addNewRecord.resx">
+      <DependentUpon>addNewRecord.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="docHome.resx">
+    <EmbeddedResource Include="Doc\allCases.resx">
+      <DependentUpon>allCases.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doc\docHome.resx">
       <DependentUpon>docHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doc\drGrantAccess.resx">
+      <DependentUpon>drGrantAccess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doc\makeCaseDoc.resx">
+      <DependentUpon>makeCaseDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doc\viewCaseDoc.resx">
+      <DependentUpon>viewCaseDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doc\viewRecord.resx">
+      <DependentUpon>viewRecord.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="makeAppPat.resx">
+    <EmbeddedResource Include="Pat\grantAccess.resx">
+      <DependentUpon>grantAccess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pat\makeAppPat.resx">
       <DependentUpon>makeAppPat.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="makeCall.resx">
+    <EmbeddedResource Include="Pat\makeCall.resx">
       <DependentUpon>makeCall.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="myRecords.resx">
+    <EmbeddedResource Include="Pat\myRecords.resx">
       <DependentUpon>myRecords.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="newScript.resx">
+    <EmbeddedResource Include="Doc\newScript.resx">
       <DependentUpon>newScript.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="patHome.resx">
+    <EmbeddedResource Include="Pat\patHome.resx">
       <DependentUpon>patHome.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="patientRecords.resx">
+    <EmbeddedResource Include="Doc\patientRecords.resx">
       <DependentUpon>patientRecords.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharm\activeCases.resx">
+      <DependentUpon>activeCases.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharm\activePrescriptions.resx">
+      <DependentUpon>activePrescriptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharm\allRecords.resx">
+      <DependentUpon>allRecords.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharm\incomingScrips.resx">
+      <DependentUpon>incomingScrips.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharm\makeCasePharm.resx">
+      <DependentUpon>makeCasePharm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharm\pharmHome.resx">
+      <DependentUpon>pharmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharm\refillReqs.resx">
+      <DependentUpon>refillReqs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharm\viewCasePharm.resx">
+      <DependentUpon>viewCasePharm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharm\viewRecord.resx">
+      <DependentUpon>viewRecord.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -155,13 +290,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="appointments.resx">
+    <EmbeddedResource Include="Doc\appointments.resx">
       <DependentUpon>appointments.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="refillMeds.resx">
+    <EmbeddedResource Include="Pat\refillMeds.resx">
       <DependentUpon>refillMeds.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="refillReq.resx">
+    <EmbeddedResource Include="Doc\refillReq.resx">
       <DependentUpon>refillReq.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
