@@ -32,13 +32,13 @@ namespace DocPatSystem
                 newDocHomePage.Show();
                 this.Hide();
             }
-            if (user.Equals("Pharm"))
+            /*if (user.Equals("Pharm"))
             {
                 pharmHome newpharmHomePage = new pharmHome();
                 newpharmHomePage.FormClosed += new FormClosedEventHandler(newDocHomePageClosed);
                 newpharmHomePage.Show();
                 this.Hide();
-            }
+            }*/
             if (user.Equals("Pat"))
             {
                 patHome newPatHomePage = new patHome();
