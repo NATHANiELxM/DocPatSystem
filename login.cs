@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace DocPatSystem
 {
@@ -21,32 +22,142 @@ namespace DocPatSystem
         // For Testing "Dr" goes to doctor page and "Pat" goes to patient
         private void Button1_Click(object sender, EventArgs e)
         {
-            String user = usernameTB1.Text;
-            //This will get the info from the username and password fields and check with the database is they are correct
-            // By username, it will determine if it goes to doctor or patient page.
-            //If user if doctor...
-            if (user.Equals("Dr"))
-            {
-                docHome newDocHomePage = new docHome();
-                newDocHomePage.FormClosed += new FormClosedEventHandler(newDocHomePageClosed);
-                newDocHomePage.Show();
-                this.Hide();
-            }
-            /*if (user.Equals("Pharm"))
-            {
-                pharmHome newpharmHomePage = new pharmHome();
-                newpharmHomePage.FormClosed += new FormClosedEventHandler(newDocHomePageClosed);
-                newpharmHomePage.Show();
-                this.Hide();
-            }*/
-            if (user.Equals("Pat"))
-            {
-                patHome newPatHomePage = new patHome();
-                newPatHomePage.FormClosed += new FormClosedEventHandler(newPatHomePageClosed);
-                newPatHomePage.Show();
-                this.Hide();
-            }
+            string localDOCUsername = usernameTB1.Text;
+            string localDOCPassword = passwordTB2.Text;
 
+            string localPharmUsername = usernameTB1.Text;
+            string localPharmPassword = passwordTB2.Text;
+
+            string localPatUsername = usernameTB1.Text;
+            string localPatPassword = passwordTB2.Text;
+
+            string connStr = "server=csdatabase.eku.edu;user=stu_csc340;database=csc340_db;port=3306;password=Colonels18;";
+
+            MySql.Data.MySqlClient.MySqlConnection conn = new MySql.Data.MySqlClient.MySqlConnection(connStr);
+
+            //CHECK IF USER IS A DOCTOR
+            try
+            {
+                Console.WriteLine("Connecting to MySQL...");
+                conn.Open();
+                string sql_user = "SELECT username FROM crn_doctor WHERE username=@username";
+                string sql_pass = "SELECT pword FROM crn_doctor WHERE pword=@pword";
+                MySql.Data.MySqlClient.
+                MySqlCommand cmd1 = new MySql.Data.MySqlClient.MySqlCommand(sql_user, conn);
+                MySqlCommand cmd2 = new MySql.Data.MySqlClient.MySqlCommand(sql_pass, conn);
+                cmd1.Parameters.AddWithValue("@username", localDOCUsername);
+                cmd2.Parameters.AddWithValue("@pword", localDOCPassword);
+                MySqlDataReader myUserReader = cmd1.ExecuteReader();
+                MySqlDataReader myPassReader = cmd2.ExecuteReader();
+                if (myUserReader.Read())
+                {
+                    usernameTB1.Text = myUserReader["username"].ToString();
+                    
+                }
+                myUserReader.Close();
+
+                if (myPassReader.Read())
+                {
+                    passwordTB2.Text = myPassReader["pword"].ToString();
+
+                }
+                myPassReader.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+            conn.Close();
+            //END CHECKING FOR DOCTOR-----------------------------------------------
+            Console.WriteLine("Done.");
+
+
+            //CHECK IF USER IS A PATIENT
+            try
+            {
+                Console.WriteLine("Connecting to MySQL...");
+                conn.Open();
+                string sql_user = "SELECT username FROM crn_patient WHERE username=@username";
+                string sql_pass = "SELECT pword FROM crn_patient WHERE pword=@pword";
+                MySql.Data.MySqlClient.
+                MySqlCommand cmd1 = new MySql.Data.MySqlClient.MySqlCommand(sql_user, conn);
+                MySqlCommand cmd2 = new MySql.Data.MySqlClient.MySqlCommand(sql_pass, conn);
+                cmd1.Parameters.AddWithValue("@username", localPatUsername);
+                cmd2.Parameters.AddWithValue("@pword", localPatPassword);
+                MySqlDataReader myUserReader = cmd1.ExecuteReader();
+                MySqlDataReader myPassReader = cmd2.ExecuteReader();
+                if (myUserReader.Read())
+                {
+                    usernameTB1.Text = myUserReader["username"].ToString();
+                }
+                myUserReader.Close();
+
+                if (myPassReader.Read())
+                {
+                    passwordTB2.Text = myPassReader["pword"].ToString();
+                }
+                myPassReader.Close();
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+            conn.Close();
+            //END CHECKING FOR PATIENT-----------------------------------------------
+            Console.WriteLine("Done.");
+
+
+            //CHECK IF USER IS A PHARMACIST @ PHARMACY
+            try
+            {
+                Console.WriteLine("Connecting to MySQL...");
+                conn.Open();
+                string sql_user = "SELECT username FROM crn_pharmacy WHERE username=@username";
+                string sql_pass = "SELECT pword FROM crn_pharmacy WHERE pword=@pword";
+                MySql.Data.MySqlClient.
+                MySqlCommand cmd = new MySql.Data.MySqlClient.MySqlCommand(sql_user, conn);
+                cmd.Parameters.AddWithValue("@username", localPharmUsername);
+                cmd.Parameters.AddWithValue("@pword", localPharmPassword);
+                MySqlDataReader myReader = cmd.ExecuteReader();
+                if (myReader.Read())
+                {
+                    usernameTB1.Text = myReader["username"].ToString();
+                    passwordTB2.Text = myReader["pword"].ToString();
+                }
+                myReader.Close();
+                if (localPharmUsername.Equals("username"))
+                {
+                    if (localPharmPassword.Equals("pword"))
+                    {
+                        //pharmHome newpharmHomePage = new pharmHome();
+                        //newpharmHomePage.FormClosed += new FormClosedEventHandler(newDocHomePageClosed);
+                        //newpharmHomePage.Show();
+                        this.Hide();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+            conn.Close();
+            //END CHECKING FOR PHARMACIST @ PHARMACY-----------------------------------------------
+            Console.WriteLine("Done.");
+
+            
+            //DOCTOR if
+            if (localDOCUsername.Equals(usernameTB1.Text))
+            {
+                if (localDOCPassword.Equals(passwordTB2.Text))
+                {
+                    docHome newDocHomePage = new docHome();
+                    newDocHomePage.FormClosed += new FormClosedEventHandler(newDocHomePageClosed);
+                    newDocHomePage.Show();
+                    this.Hide();
+                }
+
+            }
         }
 
         //should only come back when loging out, not closing program?

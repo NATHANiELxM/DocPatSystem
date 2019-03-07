@@ -1,4 +1,5 @@
-﻿namespace DocPatSystem.Pat
+﻿using MySql.Data.MySqlClient;
+namespace DocPatSystem.Pat
 {
     partial class grantAccess
     {

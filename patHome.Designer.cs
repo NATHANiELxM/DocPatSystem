@@ -74,9 +74,9 @@
             this.currentTabLabel.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.currentTabLabel.Location = new System.Drawing.Point(36, 24);
             this.currentTabLabel.Name = "currentTabLabel";
-            this.currentTabLabel.Size = new System.Drawing.Size(87, 20);
+            this.currentTabLabel.Size = new System.Drawing.Size(180, 20);
             this.currentTabLabel.TabIndex = 0;
-            this.currentTabLabel.Text = "Homepage";
+            this.currentTabLabel.Text = "Homepage(current tab)";
             // 
             // leftPanel
             // 
@@ -198,7 +198,7 @@
             this.Controls.Add(this.displayPanel);
             this.Controls.Add(this.topPanel);
             this.Controls.Add(this.leftPanel);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "patHome";
             this.Text = "Patient Home Page";
             this.topPanel.ResumeLayout(false);
