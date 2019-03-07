@@ -1,4 +1,5 @@
-﻿namespace DocPatSystem
+﻿using MySql.Data.MySqlClient;
+namespace DocPatSystem
 {
     partial class callReq
     {

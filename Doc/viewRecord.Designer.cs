@@ -1,4 +1,5 @@
-﻿namespace DocPatSystem.Doc
+﻿using MySql.Data.MySqlClient;
+namespace DocPatSystem.Doc
 {
     partial class viewRecord
     {
