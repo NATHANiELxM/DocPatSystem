@@ -84,3 +84,32 @@ W:\CSC340\Team Project\Doctor-Patient_Service_System\DocPatSystem-master\bin\Deb
 W:\CSC340\Team Project\Doctor-Patient_Service_System\DocPatSystem-master\bin\Debug\DocPatSystem.pdb
 W:\CSC340\Team Project\Doctor-Patient_Service_System\DocPatSystem-master\bin\Debug\MySql.Data.dll
 W:\CSC340\Team Project\Doctor-Patient_Service_System\DocPatSystem-master\obj\Debug\DocPatSystem.csproj.CopyComplete
+C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\bin\Debug\DocPatSystem.exe.config
+C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\bin\Debug\DocPatSystem.exe
+C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\bin\Debug\DocPatSystem.pdb
+C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\bin\Debug\MySql.Data.dll
+C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.csprojAssemblyReference.cache
+C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.Doc.addNewRecord.resources
+C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.callReq.resources
+C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.docHome.resources
+C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.Doc.drGrantAccess.resources
+C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.Doc.makeCaseDoc.resources
+C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.Doc.viewCaseDoc.resources
+C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.Doc.viewRecord.resources
+C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.login.resources
+C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.Pat.grantAccess.resources
+C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.makeAppPat.resources
+C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.makeCall.resources
+C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.myRecords.resources
+C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.newScript.resources
+C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.patHome.resources
+C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.patientRecords.resources
+C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.Properties.Resources.resources
+C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.appointments.resources
+C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.refillMeds.resources
+C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.refillReq.resources
+C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.csproj.GenerateResource.cache
+C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.csproj.CoreCompileInputs.cache
+C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.csproj.CopyComplete
+C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.exe
+C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.pdb

@@ -145,6 +145,7 @@ namespace DocPatSystem
             this.Controls.Add(this.searchResultsLabel);
             this.Name = "patientRecords";
             this.Size = new System.Drawing.Size(900, 433);
+            this.Load += new System.EventHandler(this.patientRecords_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

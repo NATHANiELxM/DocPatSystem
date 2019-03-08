@@ -286,6 +286,7 @@ namespace DocPatSystem.Doc
             this.saveButt.TabIndex = 48;
             this.saveButt.Text = "Save New Patient Record";
             this.saveButt.UseVisualStyleBackColor = false;
+            this.saveButt.Click += new System.EventHandler(this.saveButt_Click);
             // 
             // addNewRecord
             // 
