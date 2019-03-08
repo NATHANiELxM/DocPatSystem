@@ -147,9 +147,9 @@ namespace DocPatSystem
 
             
             //DOCTOR if
-            if (localDOCUsername.Equals(usernameTB1.Text))
+            if (localDOCUsername.Equals(""))
             {
-                if (localDOCPassword.Equals(passwordTB2.Text))
+                if (localDOCPassword.Equals(""))
                 {
                     docHome newDocHomePage = new docHome();
                     newDocHomePage.FormClosed += new FormClosedEventHandler(newDocHomePageClosed);
@@ -158,6 +158,20 @@ namespace DocPatSystem
                 }
 
             }
+            //PATIENT if
+            if (localDOCUsername.Equals("Pat"))
+            {
+
+                patHome newPatHomePage = new patHome();
+                newPatHomePage.FormClosed += new FormClosedEventHandler(newPatHomePageClosed);
+                newPatHomePage.Show();
+                this.Hide();
+
+
+            }
+
+
+
         }
 
         //should only come back when loging out, not closing program?
