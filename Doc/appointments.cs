@@ -51,14 +51,19 @@ namespace DocPatSystem
 
         private void makeButt_Click(object sender, EventArgs e)
         {
-            //DO WE NEED THIS BUTTON?!? I kinda thought we do, but idk.
-            //I saw ryan's make appointment button and was not for sure if it was to make a new on or confirm an awaiting one. 
+            Doc.setupApp newSetupAppPage = new Doc.setupApp();
+            newSetupAppPage.FormClosed += new FormClosedEventHandler(newSetupAppPageClosed);
+            newSetupAppPage.Show();
+            this.Hide();
 
-            //This will make a new auto-approved appointment.
+            
+        }
+        void newSetupAppPageClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Show();
         }
 
 
-        
         private void currentAppsTable_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 

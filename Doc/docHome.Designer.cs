@@ -215,7 +215,7 @@ namespace DocPatSystem
             this.Controls.Add(this.displayPanel);
             this.Controls.Add(this.topPanel);
             this.Controls.Add(this.leftPanel);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "docHome";
             this.Text = "Doctor Home Page";
             this.leftPanel.ResumeLayout(false);

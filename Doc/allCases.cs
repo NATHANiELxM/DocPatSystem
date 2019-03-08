@@ -23,10 +23,18 @@ namespace DocPatSystem
             InitializeComponent();
         }
 
-        //This button takes the selected patient from the call request table and sets the status to active call (if they answer.)
+        //NEW CASE BUTTON
         private void callButt_Click(object sender, EventArgs e)
         {
-            // sends the name and number to the active call tab to the right. 
+            Doc.makeCaseForm newMakeCaseForm = new Doc.makeCaseForm();
+            newMakeCaseForm.FormClosed += new FormClosedEventHandler(newMakeCaseFormClosed);
+            newMakeCaseForm.Show();
+            this.Hide();
+
+        }
+        void newMakeCaseFormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Show();
         }
 
         //This button takes the actice call and ends it, logs it into the datbase as an ended call. (ended being the status)
@@ -54,7 +62,15 @@ namespace DocPatSystem
         //This is the table
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            Doc.viewCaseForm newViewCaseForm = new Doc.viewCaseForm();
+            newViewCaseForm.FormClosed += new FormClosedEventHandler(newViewCaseFormClosed);
+            newViewCaseForm.Show();
+            this.Hide();
         }
+        void newViewCaseFormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Show();
+        }
+
     }
 }

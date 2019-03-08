@@ -136,6 +136,7 @@ namespace DocPatSystem
             this.label2.Size = new System.Drawing.Size(91, 20);
             this.label2.TabIndex = 9;
             this.label2.Text = "Select Day:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -146,6 +147,7 @@ namespace DocPatSystem
             this.label3.Size = new System.Drawing.Size(99, 20);
             this.label3.TabIndex = 10;
             this.label3.Text = "Select Time:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -156,6 +158,7 @@ namespace DocPatSystem
             this.label4.Size = new System.Drawing.Size(67, 20);
             this.label4.TabIndex = 11;
             this.label4.Text = "Reason:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // reqAppButt
             // 

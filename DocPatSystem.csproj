@@ -73,17 +73,23 @@
     <Compile Include="Doc\drGrantAccess.Designer.cs">
       <DependentUpon>drGrantAccess.cs</DependentUpon>
     </Compile>
-    <Compile Include="Doc\makeCaseDoc.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="Doc\makeCaseForm.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Doc\makeCaseDoc.Designer.cs">
-      <DependentUpon>makeCaseDoc.cs</DependentUpon>
+    <Compile Include="Doc\makeCaseForm.Designer.cs">
+      <DependentUpon>makeCaseForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Doc\viewCaseDoc.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="Doc\setupApp.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Doc\viewCaseDoc.Designer.cs">
-      <DependentUpon>viewCaseDoc.cs</DependentUpon>
+    <Compile Include="Doc\setupApp.Designer.cs">
+      <DependentUpon>setupApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doc\viewCaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doc\viewCaseForm.Designer.cs">
+      <DependentUpon>viewCaseForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Doc\viewRecord.cs">
       <SubType>Form</SubType>
@@ -171,11 +177,14 @@
     <EmbeddedResource Include="Doc\drGrantAccess.resx">
       <DependentUpon>drGrantAccess.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Doc\makeCaseDoc.resx">
-      <DependentUpon>makeCaseDoc.cs</DependentUpon>
+    <EmbeddedResource Include="Doc\makeCaseForm.resx">
+      <DependentUpon>makeCaseForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Doc\viewCaseDoc.resx">
-      <DependentUpon>viewCaseDoc.cs</DependentUpon>
+    <EmbeddedResource Include="Doc\setupApp.resx">
+      <DependentUpon>setupApp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doc\viewCaseForm.resx">
+      <DependentUpon>viewCaseForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Doc\viewRecord.resx">
       <DependentUpon>viewRecord.cs</DependentUpon>

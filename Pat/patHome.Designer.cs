@@ -199,7 +199,7 @@ namespace DocPatSystem
             this.Controls.Add(this.displayPanel);
             this.Controls.Add(this.topPanel);
             this.Controls.Add(this.leftPanel);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "patHome";
             this.Text = "Patient Home Page";
             this.topPanel.ResumeLayout(false);

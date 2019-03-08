@@ -33,7 +33,15 @@ namespace DocPatSystem
         //This button sends the data to the database, and send the request to the doctor system.
         private void reqAppButt_Click(object sender, EventArgs e)
         {
+            Doc.setupApp newSetupAppPage = new Doc.setupApp();
+            newSetupAppPage.FormClosed += new FormClosedEventHandler(newSetupAppPageClosed);
+            newSetupAppPage.Show();
+            this.Hide();
+        }
 
+        void newSetupAppPageClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Show();
         }
 
         //Textboxes
@@ -58,6 +66,21 @@ namespace DocPatSystem
         }
 
         private void reasonTB_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }

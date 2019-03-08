@@ -318,6 +318,7 @@ namespace DocPatSystem.Doc
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.nameLabel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "viewRecord";
             this.Text = "viewRecord";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
