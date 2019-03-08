@@ -93,8 +93,6 @@ C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\
 C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.callReq.resources
 C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.docHome.resources
 C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.Doc.drGrantAccess.resources
-C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.Doc.makeCaseDoc.resources
-C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.Doc.viewCaseDoc.resources
 C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.Doc.viewRecord.resources
 C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.login.resources
 C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.Pat.grantAccess.resources
@@ -113,3 +111,6 @@ C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\
 C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.csproj.CopyComplete
 C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.exe
 C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.pdb
+C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.Doc.setupApp.resources
+C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.Doc.makeCaseForm.resources
+C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.Doc.viewCaseForm.resources
