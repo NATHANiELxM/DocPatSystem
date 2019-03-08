@@ -103,6 +103,7 @@ namespace DocPatSystem
             this.Controls.Add(this.refillReqPanel);
             this.Name = "refillReq";
             this.Size = new System.Drawing.Size(900, 433);
+            this.Load += new System.EventHandler(this.refillReq_Load);
             this.refillReqPanel.ResumeLayout(false);
             this.refillReqPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
