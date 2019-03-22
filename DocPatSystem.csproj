@@ -139,6 +139,60 @@
     <Compile Include="Doc\patientRecords.Designer.cs">
       <DependentUpon>patientRecords.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pharm\activeCases.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharm\activeCases.Designer.cs">
+      <DependentUpon>activeCases.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharm\activePrescriptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharm\activePrescriptions.Designer.cs">
+      <DependentUpon>activePrescriptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharm\allRecords.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharm\allRecords.Designer.cs">
+      <DependentUpon>allRecords.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharm\incomingScrips.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharm\incomingScrips.Designer.cs">
+      <DependentUpon>incomingScrips.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharm\makeCasePharm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharm\makeCasePharm.Designer.cs">
+      <DependentUpon>makeCasePharm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharm\pharmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharm\pharmHome.Designer.cs">
+      <DependentUpon>pharmHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharm\refillReqs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharm\refillReqs.Designer.cs">
+      <DependentUpon>refillReqs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharm\viewCasePharm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharm\viewCasePharm.Designer.cs">
+      <DependentUpon>viewCasePharm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharm\viewRecord.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharm\viewRecord.Designer.cs">
+      <DependentUpon>viewRecord.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Doc\appointments.cs">
@@ -212,6 +266,33 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Doc\patientRecords.resx">
       <DependentUpon>patientRecords.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharm\activeCases.resx">
+      <DependentUpon>activeCases.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharm\activePrescriptions.resx">
+      <DependentUpon>activePrescriptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharm\allRecords.resx">
+      <DependentUpon>allRecords.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharm\incomingScrips.resx">
+      <DependentUpon>incomingScrips.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharm\makeCasePharm.resx">
+      <DependentUpon>makeCasePharm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharm\pharmHome.resx">
+      <DependentUpon>pharmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharm\refillReqs.resx">
+      <DependentUpon>refillReqs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharm\viewCasePharm.resx">
+      <DependentUpon>viewCasePharm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharm\viewRecord.resx">
+      <DependentUpon>viewRecord.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

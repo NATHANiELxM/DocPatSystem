@@ -169,6 +169,17 @@ namespace DocPatSystem
 
 
             }
+            //Pharmacy if
+            if (localDOCUsername.Equals("Pharm"))
+            {
+
+                pharmHome newPharmHomePage = new pharmHome();
+                newPharmHomePage.FormClosed += new FormClosedEventHandler(newPharmHomePageClosed);
+                newPharmHomePage.Show();
+                this.Hide();
+
+
+            }
 
 
 
@@ -181,6 +192,11 @@ namespace DocPatSystem
         }
         //should only come back when loging out, not closing program?
         void newPatHomePageClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Show();
+        }
+
+        void newPharmHomePageClosed(object sender, FormClosedEventArgs e)
         {
             this.Show();
         }
