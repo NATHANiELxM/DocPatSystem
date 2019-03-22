@@ -33,18 +33,10 @@ namespace DocPatSystem
             this.label1 = new System.Windows.Forms.Label();
             this.cancelButt = new System.Windows.Forms.Button();
             this.currentAppsTable = new System.Windows.Forms.DataGridView();
-            this.LastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Time = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.awaitingAppsPanel = new System.Windows.Forms.Panel();
             this.approveButt = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.awaitingAppsTable = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.denyButt = new System.Windows.Forms.Button();
             this.makeButt = new System.Windows.Forms.Button();
             this.currentAppsPanel.SuspendLayout();
@@ -91,36 +83,12 @@ namespace DocPatSystem
             // currentAppsTable
             // 
             this.currentAppsTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.currentAppsTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.LastName,
-            this.FirstName,
-            this.Date,
-            this.Time});
             this.currentAppsTable.Location = new System.Drawing.Point(3, 55);
             this.currentAppsTable.Name = "currentAppsTable";
+            this.currentAppsTable.ReadOnly = true;
             this.currentAppsTable.Size = new System.Drawing.Size(444, 290);
             this.currentAppsTable.TabIndex = 4;
             this.currentAppsTable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.currentAppsTable_CellContentClick);
-            // 
-            // LastName
-            // 
-            this.LastName.HeaderText = "Last Name";
-            this.LastName.Name = "LastName";
-            // 
-            // FirstName
-            // 
-            this.FirstName.HeaderText = "First Name";
-            this.FirstName.Name = "FirstName";
-            // 
-            // Date
-            // 
-            this.Date.HeaderText = "Date";
-            this.Date.Name = "Date";
-            // 
-            // Time
-            // 
-            this.Time.HeaderText = "Time";
-            this.Time.Name = "Time";
             // 
             // awaitingAppsPanel
             // 
@@ -162,36 +130,12 @@ namespace DocPatSystem
             // awaitingAppsTable
             // 
             this.awaitingAppsTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.awaitingAppsTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4});
             this.awaitingAppsTable.Location = new System.Drawing.Point(3, 55);
             this.awaitingAppsTable.Name = "awaitingAppsTable";
+            this.awaitingAppsTable.ReadOnly = true;
             this.awaitingAppsTable.Size = new System.Drawing.Size(444, 290);
             this.awaitingAppsTable.TabIndex = 6;
             this.awaitingAppsTable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.awaitingAppsTable_CellContentClick);
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "Last Name";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "First Name";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "Date";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "Time";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
             // denyButt
             // 
@@ -226,6 +170,7 @@ namespace DocPatSystem
             this.Controls.Add(this.currentAppsPanel);
             this.Name = "appointments";
             this.Size = new System.Drawing.Size(900, 433);
+            this.Load += new System.EventHandler(this.appointments_Load);
             this.currentAppsPanel.ResumeLayout(false);
             this.currentAppsPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.currentAppsTable)).EndInit();
@@ -242,18 +187,10 @@ namespace DocPatSystem
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button cancelButt;
         private System.Windows.Forms.DataGridView currentAppsTable;
-        private System.Windows.Forms.DataGridViewTextBoxColumn LastName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FirstName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Date;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Time;
         private System.Windows.Forms.Panel awaitingAppsPanel;
         private System.Windows.Forms.Button approveButt;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView awaitingAppsTable;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.Button denyButt;
         private System.Windows.Forms.Button makeButt;
     }

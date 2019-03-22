@@ -67,6 +67,8 @@ namespace DocPatSystem.Doc
             conn.Close();
 
             Console.WriteLine("Done.");
+
+            this.Close();
         }
     }
 }

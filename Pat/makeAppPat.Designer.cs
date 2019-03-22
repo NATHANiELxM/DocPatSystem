@@ -102,6 +102,14 @@ namespace DocPatSystem
             // 
             this.timeDropDown.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.timeDropDown.FormattingEnabled = true;
+            this.timeDropDown.Items.AddRange(new object[] {
+            "10:00AM",
+            "11:00AM",
+            "12:00PM",
+            "1:00PM",
+            "2:00PM",
+            "3:00PM",
+            "4:00PM"});
             this.timeDropDown.Location = new System.Drawing.Point(662, 59);
             this.timeDropDown.Name = "timeDropDown";
             this.timeDropDown.Size = new System.Drawing.Size(173, 28);

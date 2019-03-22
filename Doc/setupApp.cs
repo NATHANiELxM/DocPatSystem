@@ -29,19 +29,26 @@ namespace DocPatSystem.Doc
             try
 
             {
+                string enteredDate = monthCalendar1.SelectionRange.Start.ToShortDateString();
+                string enteredTime = timeDropDown.SelectedItem.ToString();
+
+                string enteredReason = reasonTB.Text;
+                int enteredPatID = Int32.Parse(patIDTB.Text);
 
                 Console.WriteLine("Connecting to MySQL...");
 
                 conn.Open();
 
-                string sql = "INSERT INTO crn_appointment (date, time, reason, gender, doc_ID, patient_ID) VALUES (@udate, @utime, @ureason, 4, @upatID,'APP')";
+
+                //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ later get user id(Doc) and put here \/
+                string sql = "INSERT INTO crn_appointment (date, time, reason, doc_ID, patient_ID, status) VALUES (@udate, @utime, @ureason, 4, @upatID,'CON')";
 
                 MySql.Data.MySqlClient.MySqlCommand cmd = new MySql.Data.MySqlClient.MySqlCommand(sql, conn);
 
-               // cmd.Parameters.AddWithValue("@udate", date);
-              //  cmd.Parameters.AddWithValue("@utime", time);
-              //  cmd.Parameters.AddWithValue("@ureason", reason);
-             //   cmd.Parameters.AddWithValue("@upatID", patID);
+                cmd.Parameters.AddWithValue("@udate", enteredDate);
+                cmd.Parameters.AddWithValue("@utime", enteredTime);
+                cmd.Parameters.AddWithValue("@ureason", enteredReason);
+                cmd.Parameters.AddWithValue("@upatID", enteredPatID);
                 
 
                 cmd.ExecuteNonQuery();
@@ -59,8 +66,10 @@ namespace DocPatSystem.Doc
             conn.Close();
 
             Console.WriteLine("Done.");
-        
-    }
+
+            this.Close();
+        }
+
     }
 
 }

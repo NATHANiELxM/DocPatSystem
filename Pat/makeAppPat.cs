@@ -33,11 +33,54 @@ namespace DocPatSystem
         //This button sends the data to the database, and send the request to the doctor system.
         private void reqAppButt_Click(object sender, EventArgs e)
         {
-            Doc.setupApp newSetupAppPage = new Doc.setupApp();
-            newSetupAppPage.FormClosed += new FormClosedEventHandler(newSetupAppPageClosed);
-            newSetupAppPage.Show();
-            this.Hide();
+
+            string connStr = "server=csdatabase.eku.edu;user=stu_csc340;database=csc340_db;port=3306;password=Colonels18;";
+
+            MySql.Data.MySqlClient.MySqlConnection conn = new MySql.Data.MySqlClient.MySqlConnection(connStr);
+
+            try
+
+            {
+                string enteredDate = monthCalendar1.SelectionRange.Start.ToShortDateString();
+                string enteredTime = timeDropDown.SelectedItem.ToString();
+
+                string enteredReason = reasonTB.Text;
+
+                Console.WriteLine("Connecting to MySQL...");
+
+                conn.Open();
+
+
+                //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ later get userid(PAT) & Doc from textbox and put here \/
+                string sql = "INSERT INTO crn_appointment (date, time, reason, doc_ID, patient_ID, status) VALUES (@udate, @utime, @ureason, 4, 2,'REQ')";
+
+                MySql.Data.MySqlClient.MySqlCommand cmd = new MySql.Data.MySqlClient.MySqlCommand(sql, conn);
+
+                cmd.Parameters.AddWithValue("@udate", enteredDate);
+                cmd.Parameters.AddWithValue("@utime", enteredTime);
+                cmd.Parameters.AddWithValue("@ureason", enteredReason);
+
+
+                cmd.ExecuteNonQuery();
+
+            }
+
+            catch (Exception ex)
+
+            {
+
+                Console.WriteLine(ex.ToString());
+
+            }
+
+            conn.Close();
+
+            Console.WriteLine("Done.");
+
+            System.Windows.Forms.MessageBox.Show("You have requested an appointment.");
         }
+
+    
 
         void newSetupAppPageClosed(object sender, FormClosedEventArgs e)
         {

@@ -73,6 +73,7 @@ namespace DocPatSystem
         }
         void newAddNewRecordPageClosed(object sender, FormClosedEventArgs e)
         {
+            dataGridView1.Refresh();
             this.Show();
         }
 
