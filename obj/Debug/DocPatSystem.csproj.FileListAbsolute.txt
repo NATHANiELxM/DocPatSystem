@@ -114,3 +114,12 @@ C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\
 C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.Doc.setupApp.resources
 C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.Doc.makeCaseForm.resources
 C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.Doc.viewCaseForm.resources
+C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.Pharm.activeCases.resources
+C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.Pharm.activePrescriptions.resources
+C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.Pharm.allRecords.resources
+C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.Pharm.incomingScrips.resources
+C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.Pharm.makeCasePharm.resources
+C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.pharmHome.resources
+C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.Pharm.refillReqs.resources
+C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.Pharm.viewCasePharm.resources
+C:\Users\EKUStudent\Downloads\DocPatSystem-master\DocPatSystem-master\obj\Debug\DocPatSystem.Pharm.viewRecord.resources
