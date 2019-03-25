@@ -43,9 +43,42 @@ namespace DocPatSystem
             //This cancels a selected confirmed appointment. isAppointmentApproved? will change from approved to canceled. and will be removed from table.
 
             //currentAppsTable.SelectedRows;
-
             //currentAppsTable.DataSource = bindingSource1;
-            //DeleteData("delete from crn_appointments where date ="+ date +"and time ="+ time+"");
+
+            if (this.currentAppsTable.SelectedRows.Count > 0)
+            {
+                DialogResult confirm = MessageBox.Show("Are you sure you want to cancel the selected row?", "Confirm Cancel", MessageBoxButtons.OKCancel);
+                if (confirm == DialogResult.OK)
+                {
+                    try
+                    {
+
+                        string val = currentAppsTable.SelectedCells[0].Value.ToString();
+                        currentAppsTable.DataSource = bindingSource1;   // CAN for CANCELED
+                        GetData("update crn_appointment set status = 'CAN' where ID = '" + val + "'");
+
+                        // I want to make the user selected rows deleted from the datagridview and from the database
+                        bindingSource1.RemoveAt(this.currentAppsTable.SelectedRows[0].Index);
+                        //currentAppsTable.Refresh();
+                    }
+                    catch (ArgumentOutOfRangeException outOfRange)
+                    {
+
+                        Console.WriteLine("Error: {0}", outOfRange.Message);
+                        GetData("select ID, date, time, patient_ID, reason from crn_appointment where status = 'CON' order by date , time ");
+
+                    }
+                }
+                if (confirm == DialogResult.Cancel)
+                {
+                    currentAppsTable.Refresh();
+
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a row to cancel", "Cancel");
+            }
         }
 
 
@@ -54,13 +87,85 @@ namespace DocPatSystem
         private void denyButt_Click(object sender, EventArgs e)
         {
             //this denys a selected awaiting appointment. so it turns isAppointmentApproved? to denied and deletes it from this table
-        }
+            if (this.awaitingAppsTable.SelectedRows.Count > 0)
+            {
+                DialogResult confirm = MessageBox.Show("Are you sure you want to deny the selected row?", "Confirm Deny", MessageBoxButtons.OKCancel);
+                if (confirm == DialogResult.OK)
+                {
+                    try
+                    {
+
+                        string val = awaitingAppsTable.SelectedCells[0].Value.ToString();
+                        awaitingAppsTable.DataSource = bindingSource1;   // DEN for DENIED
+                        GetData("update crn_appointment set status = 'DEN' where ID = '" + val + "'");
+
+                        // I want to make the user selected rows deleted from the datagridview and from the database
+                        bindingSource1.RemoveAt(this.awaitingAppsTable.SelectedRows[0].Index);
+                        //currentAppsTable.Refresh();
+                    }
+                    catch (ArgumentOutOfRangeException outOfRange)
+                    {
+
+                        Console.WriteLine("Error: {0}", outOfRange.Message);
+                        GetData("select ID, date, time, patient_ID, reason from crn_appointment where status = 'CON' order by date , time ");
+                        GetData2("select ID, date, time, patient_ID, reason from crn_appointment where status = 'REQ' order by date , time ");
+
+                    }
+                }
+                if (confirm == DialogResult.Cancel)
+                {
+                    awaitingAppsTable.Refresh();
+
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a row to deny", "Deny");
+            }
+        
+    }
 
         private void approveButt_Click(object sender, EventArgs e)
         {
             //this approves a selected awaiting appointment.
-            // so it turns isAppointmentApproved? to approved (witch should move it to the left table in real time)
-        }
+            if (this.awaitingAppsTable.SelectedRows.Count > 0)
+            {
+                DialogResult confirm = MessageBox.Show("Are you sure you want to approve the selected row?", "Confirm Approve", MessageBoxButtons.OKCancel);
+                if (confirm == DialogResult.OK)
+                {
+                    try
+                    {
+
+                        string val = awaitingAppsTable.SelectedCells[0].Value.ToString();
+                        awaitingAppsTable.DataSource = bindingSource1;   // CON for CONFIRMED
+                        GetData("update crn_appointment set status = 'CON' where ID = '" + val + "'");
+
+                        // I want to make the user selected rows deleted from the datagridview and from the database
+                        bindingSource1.RemoveAt(this.awaitingAppsTable.SelectedRows[0].Index);
+                        
+                    }
+                    catch (ArgumentOutOfRangeException outOfRange)
+                    {
+
+                        Console.WriteLine("Error: {0}", outOfRange.Message);
+                        //refresh the datagridView
+                        GetData("select ID, date, time, patient_ID, reason from crn_appointment where status = 'CON' order by date , time ");
+                        GetData2("select ID, date, time, patient_ID, reason from crn_appointment where status = 'REQ' order by date , time ");
+
+                    }
+                }
+                if (confirm == DialogResult.Cancel)
+                {
+                    awaitingAppsTable.Refresh();
+
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a row to approve", "Approve");
+            }
+        
+    }
 
         private void makeButt_Click(object sender, EventArgs e)
         {
@@ -75,6 +180,8 @@ namespace DocPatSystem
         {
             currentAppsTable.Refresh();
             this.Show();
+            GetData("select ID, date, time, patient_ID, reason from crn_appointment where status = 'CON' order by date , time ");
+            GetData2("select ID, date, time, patient_ID, reason from crn_appointment where status = 'REQ' order by date , time ");
         }
 
 
@@ -147,43 +254,7 @@ namespace DocPatSystem
 
         }
 
-        private void DeleteData(string selectCommand)
-        {
-            try
-            {
-
-                String connectionString = "server=csdatabase.eku.edu;user=stu_csc340;database=csc340_db;port=3306;password=Colonels18;";
-                MySqlConnection conDB = new MySqlConnection(connectionString);
-                MySqlCommand cmdDB = new MySqlCommand(selectCommand, conDB);
-
-                try
-                {
-                    MySqlDataAdapter sda = new MySqlDataAdapter();
-                    sda.SelectCommand = cmdDB;
-                    DataTable dbDataSet = new DataTable();
-                    sda.Fill(dbDataSet);
-
-                    bindingSource1.DataSource = dbDataSet;
-                    currentAppsTable.DataSource = bindingSource1;
-                    sda.Update(dbDataSet);
-                    // Resize the DataGridView columns to fit the newly loaded content.
-                    currentAppsTable.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-
-
-            }
-            catch (SqlException)
-            {
-                MessageBox.Show("To run this example, replace the value of the " +
-                    "connectionString variable with a connection string that is " +
-                    "valid for your system.");
-            }
-
-        }
+       
         private void GetData2(string selectCommand)
         {
             try

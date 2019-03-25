@@ -25,6 +25,7 @@ namespace DocPatSystem
         public docHome()
         {
             InitializeComponent();
+            //welcomeLabel.Text = "Welcome Doctor "+login.currentUserID;
         }
 
 

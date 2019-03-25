@@ -148,6 +148,7 @@ namespace DocPatSystem
             this.denyButt.TabIndex = 7;
             this.denyButt.Text = "Deny Appointment";
             this.denyButt.UseVisualStyleBackColor = false;
+            this.denyButt.Click += new System.EventHandler(this.denyButt_Click);
             // 
             // makeButt
             // 
